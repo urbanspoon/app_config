@@ -1,7 +1,3 @@
-== UPDATE
-
-This project is no longer supported or maintained.  It has been superceded by ConfigSpartan:  https://github.com/cjbottaro/config_spartan
-
 == Summary
 Application level configuration.
 

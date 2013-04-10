@@ -25,6 +25,12 @@ class AppConfigTest < Test::Unit::TestCase
     assert_equal 'google.com', config.server
   end
   
+  def test_many
+    config = ApplicationConfiguration.new('test/app_config.yml', 'test/development.yml', 'test/local.yml')
+    assert_equal 6, config.size
+    assert_equal 'nothing.com', config.server
+  end
+  
   def test_nested
     config = ApplicationConfiguration.new('test/development.yml')
     assert_equal 3, config.section.size
